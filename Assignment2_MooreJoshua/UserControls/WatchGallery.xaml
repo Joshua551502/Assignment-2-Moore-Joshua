@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Assignment2_MooreJoshua.UserControls.WatchGallery"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="700" d:DesignWidth="570"
+             Background="White"
+             Style="{StaticResource UserControl_Style}">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+
+            <TextBlock 
+                Text="Welcome to Harry Rosen Watches!" 
+                FontSize="30" 
+                FontWeight="Bold"
+                Foreground="#333333"
+                TextAlignment="Center"
+                Margin="0,0,0,20" />
+
+            <TextBlock 
+                Text="Select the filter on the left to choose the type of watches you want to add, update or delete."
+                FontSize="13" 
+                Foreground="#555555"
+                TextAlignment="Center"
+                Margin="0,0,0,30" />
+        </StackPanel>
+    </Grid>
+</UserControl>

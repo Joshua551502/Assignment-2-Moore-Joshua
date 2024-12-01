@@ -1,0 +1,64 @@
+﻿<UserControl
+    x:Class="Assignment2_MooreJoshua.UserControls.WatchItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="watchitem"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    mc:Ignorable="d">
+    <Grid>
+        <Border
+            Width="200"
+            Margin="0"
+            Padding="3"
+            CornerRadius="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="175" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Margin="0">
+                    <Border
+                        Width="200"
+                        Height="220"
+                        Margin="-10,0,0,10"
+                        Padding="3"
+                        CornerRadius="3"
+
+                        BorderThickness="1">
+                        <Image
+                            Source="{Binding ItemImageSource}"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="200"
+                            Height="220"
+                            ClipToBounds="True" />
+                    </Border>
+
+                    <TextBlock
+                        Margin="0,10,0,0"
+                        FontSize="12"
+                        FontWeight="SemiBold"
+                        Text="{Binding ItemName}" />
+
+                    <TextBlock
+                        Margin="0,10,0,0"
+                        FontSize="10"
+                        FontWeight="Medium"
+                        Text="{Binding ItemDescription}" />
+
+                    <TextBlock
+                        Margin="0,5,0,0"
+                        FontSize="10"
+                        FontWeight="Medium"
+                        Foreground="#44433f"
+                        Text="{Binding ItemPrice, StringFormat='${0:F2}'}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

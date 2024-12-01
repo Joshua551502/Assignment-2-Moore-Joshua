@@ -1,0 +1,2 @@
+﻿ALTER TABLE Items
+ADD CONSTRAINT UQ_ItemId UNIQUE (ItemId);

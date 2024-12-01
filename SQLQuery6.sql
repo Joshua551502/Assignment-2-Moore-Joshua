@@ -1,0 +1,2 @@
+﻿DELETE FROM Items;
+DBCC CHECKIDENT ('Items', RESEED, 0);

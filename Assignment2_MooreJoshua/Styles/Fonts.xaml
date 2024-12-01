@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- App Default Fonts -->
+    <FontFamily x:Key="LibreBaskervilleRegular">pack://application:,,,/Fonts/#Libre Baskerville Regular</FontFamily>
+    <FontFamily x:Key="LibreBaskervilleBold">pack://application:,,,/Fonts/#Libre Baskerville Bold</FontFamily>
+    <FontFamily x:Key="MontserratThin">pack://application:,,,/Fonts/#Montserrat Thin</FontFamily>
+
+    <!-- Implicit Style for All Controls -->
+    <Style TargetType="Control">
+        <Setter Property="FontFamily" Value="{StaticResource LibreBaskervilleRegular}" />
+    </Style>
+
+    <!-- Specific Styles for Other Controls -->
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource LibreBaskervilleRegular}" />
+    </Style>
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource LibreBaskervilleRegular}" />
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="FontFamily" Value="{StaticResource LibreBaskervilleRegular}" />
+    </Style>
+
+</ResourceDictionary>
