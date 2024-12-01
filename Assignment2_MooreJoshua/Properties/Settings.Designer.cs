@@ -38,8 +38,8 @@ namespace Assignment2_MooreJoshua.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("data source=(LocalDb)\\MSSQLLocalDB;initial catalog=Assignment2_MooreJoshua.HarryR" +
-            "osenWatchesDBWatchesDB;integrated security=True;MultipleActiveResultSets=True;Ap" +
-            "p=EntityFramework")]
+            "osenWatchesDB;integrated security=True;MultipleActiveResultSets=True;App=EntityF" +
+            "ramework")]
         public string Assignment2_MooreJoshua_HarryRosenWatchesDBConnectionString {
             get {
                 return ((string)(this["Assignment2_MooreJoshua_HarryRosenWatchesDBConnectionString"]));
